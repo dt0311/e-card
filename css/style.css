@@ -1,0 +1,654 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.ttf') format('truetype');
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1270px;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.image-container {
+    position: relative;
+    width: fit-content;
+    min-height: 10px;
+    width: 100%;
+}
+
+.main-image {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    height: 1300px;
+    width: 100vw;
+    width: 2100px;
+}
+
+.circle-box {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.overlay-grid {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: 25px;
+    position: absolute;
+    top: 450px; 
+    left: 50%; 
+    transform: translateX(-20%); 
+    width: 80%;
+    height: 20%;
+    pointer-events: none;
+}
+
+.overlay-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+}
+
+.overlay {
+    width: 120px; 
+    height: 120px; 
+    opacity: 0.8; 
+    align-self: center; 
+    justify-self: center; 
+    border-radius: 100%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    background-color: white; 
+    transition: transform 0.2s;  
+}
+
+.overlay:active {
+    transform: scale(0.9); 
+}
+
+#contact {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#mail {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#linkedin {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.rectangle-box {
+    position: absolute;
+    top: 600px; /* Adjusted to give space for the logo and grid */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    height: 160px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 20px; /* Rounded corners */
+    pointer-events: auto;
+}
+
+.arani-logo {
+    position: absolute;
+    top: 730px; /* Adjusted to give space for the grid */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px; /* Adjust as needed */
+    height: auto;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(6, min-content); /* Fixed column width */
+    gap: 3px; /* Minimized gap */
+    position: absolute;
+    top: 1220px; /* Place it at the bottom */
+    left: 31%;
+    transform: translateX(-50%);
+    width: 1px; /* Adjust as needed */
+    pointer-events: auto;
+}
+.icon-grid a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px; /* Set the width to match the icon size */
+    height: 75px; /* Set the height to match the icon size */
+    pointer-events: auto; /* Ensure the links are interactive */
+    overflow: hidden; /* Ensure there is no overflow */
+}
+.icon-grid img {
+    width: 70%; /* Adjust as needed */
+    width: 130px;
+    height: auto; /* Adjust as needed */
+    pointer-events: none;
+    
+}
+
+.address {
+    position: absolute;
+    top: 1062px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    white-space: pre wrap;
+    line-height: 1.5;
+    font-size: 18.5px;
+    letter-spacing: 5px;
+    
+}
+/* Responsive styles */
+@media screen and (max-width: 1280px) {
+    body {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+    }
+    .image-container {
+        position: absolute;
+        width: 100%;  
+        margin: 0; /* Remove any default margin */
+        padding: 0; /* Remove any default padding */
+        overflow: hidden; 
+    }
+    .main-image {
+        display: flex;
+        width: 1280px; 
+        height: 1300px; 
+        margin: 0; 
+        padding: 0; 
+        object-fit: cover;
+    }
+    .overlay-grid {
+        grid-template-columns: repeat(3, min-content);
+        gap: 20px;
+        top: 400px;
+        left: 51%;
+        transform: translateX(-50%);
+        width: 110%; 
+        max-width: 400px; 
+        height: 20%;
+        pointer-events: none;
+    }
+    .overlay-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: auto;
+    }
+
+    .overlay {
+        width: 110px;
+        height: 110px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    }
+
+    .rectangle-box {
+        top: 540px; 
+        left: 50%;
+        width: 90%;
+        width: 700px;
+        height: 160px;
+        border-radius: 20px; 
+    }
+    
+    .circle-box {
+        top: 24px; 
+        left: 49%;
+        width: 235px;
+        height: 235px;
+    }
+    
+    .arani-logo {
+        top: 660px; 
+        left: 50%;
+        width: 400px;
+    }
+
+    .icon-grid {
+        grid-template-columns: repeat(6, min-content); 
+        left: 33%;
+        gap: 5px; 
+        top: 1210px;
+    }
+
+    .icon-grid a {
+        width: 70px; 
+        height: 70px;
+    }
+    .icon-grid img {
+        width: 70%; 
+        width: 160px;
+        height: auto; 
+        pointer-events: none;
+        
+    }
+    .address {
+        top: 1040px; 
+        left: 51%;
+        font-size: 22.2px;
+        letter-spacing: 3.2px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    body {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+    }
+    .image-container {
+        position: absolute;
+        width: 100%;  
+        margin: 0; /* Remove any default margin */
+        padding: 0; /* Remove any default padding */
+        overflow: hidden; 
+    }
+    .main-image {
+        display: flex;
+        width: 1080px; 
+        height: 2400px; 
+        margin: 0; 
+        padding: 0; 
+        object-fit: cover;
+    }
+    .overlay-grid {
+        grid-template-columns: repeat(3, min-content);
+        gap: 25px;
+        top: 830px;
+        left: 42%;
+        transform: translateX(-50%);
+        width: 110%; 
+        max-width: 400px; 
+        height: 20%;
+        pointer-events: none;
+    }
+    .overlay-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: auto;
+    }
+
+    .overlay {
+        width: 170px;
+        height: 170px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    }
+
+    .rectangle-box {
+        top: 1200px; 
+        left: 50%;
+        width: 90%;
+        width: 800px;
+        height: 240px;
+        border-radius: 20px; 
+    }
+    
+    .circle-box {
+        top: 60px; 
+        left: 49%;
+        width: 600px;
+        height: 600px;
+    }
+    
+    .arani-logo {
+        top: 1400px; 
+        left: 50%;
+        width: 630px;
+    }
+
+    .icon-grid {
+        grid-template-columns: repeat(6, min-content); 
+        left: 28%;
+        gap: 7px; 
+        top: 2250px;
+    }
+
+    .icon-grid a {
+        width: 75px; 
+        height: 75px;
+    }
+    .icon-grid img {
+        width: 70%; 
+        width: 200px;
+        height: auto; 
+        pointer-events: none;
+        
+    }
+    .address {
+        top: 2000px; 
+        left: 51%;
+        font-size: 22.2px;
+        letter-spacing: 3.2px;
+        line-height: 45px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    body {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .image-container {
+        position: absolute;
+        width: 70%; 
+        width: 570px; 
+        margin: 0; 
+        padding: 0; 
+        overflow: hidden; 
+    }
+    .main-image {
+        display: flex;
+        width: 414px; 
+        height: 896px; 
+        width: 90%;
+        margin: 0; 
+        padding: 0; 
+    }
+    .overlay-grid {
+        grid-template-columns: repeat(3, min-content);
+        gap: 12px;
+        top: 300px;
+        left: 67%;
+        transform: translateX(-50%);
+        width: 80%; 
+        max-width: 400px; 
+        height: 20%;
+        pointer-events: none;
+    }
+    .overlay-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: auto;
+    }
+
+    .overlay {
+        width: 85px;
+        height: 85px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    }
+
+    .rectangle-box {
+        top: 450px; 
+        left: 61%;
+        width: 90%;
+        width: 370px;
+        height: 120px;
+        border-radius: 20px; 
+    }
+    
+    .circle-box {
+        top: 15px; 
+        left: 60%;
+        width: 195px;
+        height: 195px;
+    }
+    
+    .arani-logo {
+        top: 550px; 
+        left: 60%;
+        width: 195px;
+    }
+
+    .icon-grid {
+        grid-template-columns: repeat(6, min-content); 
+        left: 24%;
+        gap: 3px; 
+        top: 830px;
+    }
+
+    .icon-grid a {
+        width: 49px; 
+        height: 49px; 
+    }
+    .icon-grid img {
+        width: 60%; 
+        width: 120px;
+        height: auto; 
+        pointer-events: none;
+        
+    }
+    .address {
+        top: 720px; 
+        left: 60%;
+        font-size: 16.5px;
+        letter-spacing: 1.2px;
+        line-height: 25px;
+    }
+    
+}
+@media screen and (max-width: 390px) {
+    body {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+        width: 90%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        
+    }
+    .image-container {
+        position: absolute;
+        width: 390px; 
+        margin: 0; 
+        padding: 0; 
+    }
+    .main-image {
+        display: flex;
+        width: 390px; 
+        height: 844px; 
+        width: 90%;
+        margin: 0; 
+        padding: 0; 
+    }
+    .overlay-grid {
+        grid-template-columns: repeat(3, min-content);
+        gap: 10px;
+        top: 320px;
+        left: 59%;
+        transform: translateX(-50%);
+        width: 80%; 
+        max-width: 400px; 
+        height: 10%;
+        pointer-events: none;
+    }
+    .overlay-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: auto;
+    }
+
+    .overlay {
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    }
+
+    .rectangle-box {
+        top: 400px; 
+        left: 45%;
+        width: 252px;
+        height: 88px;
+        border-radius: 20px; 
+    }
+    
+    .circle-box {
+        top: 15px; 
+        left: 45%;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .arani-logo {
+        top: 490px; 
+        left: 45%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .icon-grid {
+        grid-template-columns: repeat(6, min-content); 
+        left: 19%;
+        gap: 1px; 
+        top: 805px;
+    }
+
+    .icon-grid a {
+        width: 32px; 
+        height: 32px; 
+    }
+    .icon-grid img {
+        width: 60%; 
+        width: 80px;
+        height: auto; 
+        pointer-events: none;
+        
+    }
+    .address {
+        top: 680px; 
+        left: 46%;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 25px;
+    }
+    
+}
+@media screen and (max-width: 360px) {
+    body {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+        width: 90%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        
+    }
+    .image-container {
+        position: absolute;
+        width: 360px; 
+        margin: 0; /* Remove any default margin */
+        padding: 0; /* Remove any default padding */
+    }
+    .main-image {
+        display: flex;
+        width: 360px; /* Make the image span full viewport width */
+        height: 640px; /* Adjust height to maintain aspect ratio */
+        width: 90%;
+        margin: 0; /* Remove any default margin */
+        padding: 0; /* Remove any default padding */
+    }
+    .overlay-grid {
+        grid-template-columns: repeat(3, min-content);
+        gap: 10px;
+        top: 270px;
+        left: 57%;
+        transform: translateX(-50%);
+        width: 80%; 
+        max-width: 400px; 
+        height: 10%;
+        pointer-events: none;
+    }
+    .overlay-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: auto;
+    }
+
+    .overlay {
+        width: 58px;
+        height: 58px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    }
+
+    .rectangle-box {
+        top: 350px; /* Adjusted to fit within viewport */
+        left: 44%;
+        width: 240px;
+        height: 75px;
+        border-radius: 20px; /* Rounded corners */
+    }
+    
+    .circle-box {
+        top: 15px; /* Adjust for responsive */
+        left: 45%;
+        width: 160px;
+        height: 160px;
+    }
+    
+    .arani-logo {
+        top: 422px; /* Adjust for responsive */
+        left: 45%;
+        width: 140px;
+        height: 120px;
+    }
+
+    .icon-grid {
+        grid-template-columns: repeat(6, min-content); /* Further minimized column size for responsiveness */
+        left: 17%;
+        gap: 1px; /* Minimized gap */
+        top: 595px;
+    }
+
+    .icon-grid a {
+        width: 32px; /* Further minimized link width for responsiveness */
+        height: 32px; /* Further minimized link height for responsiveness */
+    }
+    .icon-grid img {
+        width: 60%; /* Adjust as needed */
+        width: 80px;
+        height: auto; /* Adjust as needed */
+        pointer-events: none;
+        
+    }
+    .address {
+        top: 523px; /* Adjust for responsive */
+        left: 46%;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 15px;
+    }
+    
+}
