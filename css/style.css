@@ -941,3 +941,98 @@ body {
         line-height: 17px;
     }
 }
+@media screen and (max-width: 720px) { /* 720x1520 Vivo */
+    body {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+    }
+    .image-container {
+        position: absolute;
+        width: 100%;  
+        margin: 0; 
+        padding: 0; 
+        overflow: hidden; 
+    }
+    .main-image {
+        display: flex;
+        width: 720px; 
+        height: 1520px; 
+        margin: 0; 
+        padding: 0; 
+        object-fit: cover;
+    }
+    .overlay-grid {
+        grid-template-columns: repeat(3, min-content);
+        gap: 10px;
+        top: 540px;
+        left: 52%;
+        transform: translateX(-50%);
+        width: 110%; 
+        max-width: 400px; 
+        height: 20%;
+        pointer-events: none;
+    }
+    .overlay-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: auto;
+    }
+
+    .overlay {
+        width: 120px;
+        height: 120px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    }
+
+    .rectangle-box {
+        top: 780px; 
+        left: 50%;
+        width: 90%;
+        width: 560px;
+        height: 150px;
+        border-radius: 20px; 
+    }
+    
+    .circle-box {
+        top: 20px; 
+        left: 50%;
+        width: 400px;
+        height: 400px;
+    }
+    
+    .arani-logo {
+        top: 900px; 
+        left: 50%;
+        width: 300px;
+    }
+
+    .icon-grid {
+        grid-template-columns: repeat(6, min-content); 
+        left: 17%;
+        gap: 1px; 
+        top: 1400px;
+    }
+
+    .icon-grid a {
+        width: 75px; 
+        height: 75px;
+    }
+    .icon-grid img {
+        width: 40%; 
+        width: 200px;
+        height: auto; 
+        pointer-events: none;
+        
+    }
+    .address {
+        top: 1200px; 
+        left: 51%;
+        font-size: 22px;
+        letter-spacing: 3.2px;
+        line-height: 40px;
+    }
+}
