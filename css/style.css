@@ -656,4 +656,104 @@ body {
     }
     
 }
+@media screen and (max-width: 412px) { /* 412x915 */
+    body {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #f0f0f0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .image-container {
+        position: absolute;
+        width: 100%; 
+        width: 570px; 
+        margin: 0; 
+        padding: 0; 
+        overflow: hidden; 
+    }
+    .main-image {
+        display: flex;
+        width: 412px; 
+        height: 915px; 
+        width: 100%;
+        margin: 0; 
+        padding: 0; 
+    }
+    .overlay-grid {
+        grid-template-columns: repeat(3, min-content);
+        gap: 12px;
+        top: 330px;
+        left: 53%;
+        transform: translateX(-50%);
+        width: 80%; 
+        max-width: 370px; 
+        height: 20%;
+        pointer-events: none;
+    }
+    .overlay-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: auto;
+    }
 
+    .overlay {
+        width: 92px;
+        height: 92px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    }
+
+    .rectangle-box {
+        top: 480px; 
+        left: 50%;
+        width: 90%;
+        width: 370px;
+        height: 120px;
+        border-radius: 20px; 
+    }
+    
+    .circle-box {
+        top: 25px; 
+        left: 51%;
+        width: 210px;
+        height: 210px;
+    }
+    
+    .arani-logo {
+        top: 590px; 
+        left: 50%;
+        width: 180px;
+        height: auto;
+    }
+
+    .icon-grid {
+        grid-template-columns: repeat(6, min-content); 
+        left: 11%;
+        gap: 3px; 
+        top: 850px;
+    }
+
+    .icon-grid a {
+        width: 49px; 
+        height: 49px; 
+    }
+    .icon-grid img {
+        width: 60%; 
+        width: 120px;
+        height: auto; 
+        pointer-events: none;
+        
+    }
+    .address {
+        top: 755px; 
+        left: 50%;
+        font-size: 14px;
+        letter-spacing: 1.7px;
+        line-height: 20px;
+    }
+    
+}
