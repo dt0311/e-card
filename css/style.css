@@ -17,8 +17,10 @@ body {
 .image-container {
     position: relative;
     width: fit-content;
-    min-height: 10px;
     width: 100%;
+    background-size: cover; 
+    background-attachment: fixed; 
+    overflow: hidden;
 }
 
 .main-image {
@@ -27,6 +29,7 @@ body {
     max-width: 100%;
     height: 1230px;
     width: 2100px;
+    
 }
 
 .circle-box {
@@ -175,6 +178,8 @@ body {
         margin: 0; 
         padding: 0; 
         overflow: hidden; 
+        background-size: cover; 
+        background-attachment: fixed; 
     }
     .main-image {
         display: flex;
@@ -275,6 +280,8 @@ body {
         margin: 0; 
         padding: 0; 
         overflow: hidden; 
+        background-size: cover; 
+        background-attachment: fixed; 
     }
     .main-image {
         display: flex;
@@ -375,6 +382,8 @@ body {
         margin: 0; 
         padding: 0; 
         overflow: hidden; 
+        background-size: cover; 
+        background-attachment: fixed; 
     }
     .main-image {
         display: flex;
@@ -474,6 +483,8 @@ body {
         margin: 0; 
         padding: 0; 
         overflow: hidden; 
+        background-size: cover; 
+        background-attachment: fixed; 
     }
     .main-image {
         display: flex;
@@ -574,6 +585,9 @@ body {
         width: 390px; 
         margin: 0; 
         padding: 0; 
+        overflow: hidden;
+        background-size: cover; 
+        background-attachment: fixed; 
     }
     .main-image {
         display: flex;
@@ -673,7 +687,8 @@ body {
         margin: 0; 
         padding: 0;
         overflow: hidden;
-        
+        background-size: cover; 
+        background-attachment: fixed; 
     }
     .main-image {
         display: flex;
