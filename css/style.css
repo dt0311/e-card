@@ -2,16 +2,13 @@
     font-family: 'Roboto';
     src: url('Roboto-Regular.ttf') format('truetype');
 }
-body {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    width: 1230px;
+body{
+    background-image: url("./images/Background E-Card.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 0;
     margin: 0;
-    background-color: #f0f0f0;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 
 .image-container {
@@ -578,14 +575,12 @@ body {
         justify-content: center;
         align-items: center;
         background-color: #f0f0f0;
-        width: 90%;
         overflow-x: hidden;
         overflow-y: hidden;
         
     }
     .image-container {
         position: absolute;
-        width: 390px; 
         margin: 0; 
         padding: 0; 
         overflow: hidden;
