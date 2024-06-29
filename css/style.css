@@ -756,3 +756,103 @@ body {
         line-height: 15px;
     }
 }
+
+@media screen and (max-width: 720px) { /* 720x1600 Vivo Y16*/
+    body {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        
+    }
+    .image-container {
+        position: absolute;
+        width: 720px;
+        margin: 0; 
+        padding: 0;
+        overflow: hidden;
+        
+    }
+    .main-image {
+        display: flex;
+        width: 720px; 
+        height: 1600px; 
+        width: 100%;
+        margin: 0; 
+        padding: 0; 
+    }
+    .overlay-grid {
+        grid-template-columns: repeat(3, min-content);
+        gap: 13px;
+        top: 640px;
+        left: 49%;
+        transform: translateX(-50%);
+        width: 80%; 
+        max-width: 400px; 
+        height: 10%;
+        pointer-events: none;
+    }
+    .overlay-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: auto;
+    }
+
+    .overlay {
+        width: 130px;
+        height: 130px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    }
+
+    .rectangle-box {
+        top: 800px; 
+        left: 50%;
+        width: 565px;
+        height: 150px;
+        border-radius: 20px; 
+    }
+    
+    .circle-box {
+        top: 20px; 
+        left: 51%;
+        width: 400px;
+        height: 400px;
+    }
+    
+    .arani-logo {
+        top: 950px; 
+        left: 49%;
+        width: 350px;
+        height: 350px;
+    }
+
+    .icon-grid {
+        grid-template-columns: repeat(6, min-content); 
+        left: 23%;
+        gap: 11px; 
+        top: 1500px;
+    }
+
+    .icon-grid a {
+        width: 56px; 
+        height: 56px; 
+    }
+    .icon-grid img {
+        width: 60%; 
+        width: 180px;
+        height: auto; 
+        pointer-events: none;
+        
+    }
+    .address {
+        top: 1300px; 
+        left: 49%;
+        font-size: 18px;
+        letter-spacing: 3px;
+        line-height: 35px;
+    }
+}
